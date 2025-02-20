@@ -1,17 +1,19 @@
-[project]
-name = "workshop-docker"
+[tool.poetry]
+name = "deploy-de-apps-dados-no-docker"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Pedro Sanches",email = "sanchesmil@gmail.com"}
-]
+authors = ["Pedro Sanches <sanchesmil@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "streamlit (>=1.42.1,<2.0.0)"
-]
+packages = [{include = "deploy_de_apps_dados_no_docker"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.31.1"
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+
+
